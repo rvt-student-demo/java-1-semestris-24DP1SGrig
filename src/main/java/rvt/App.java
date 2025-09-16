@@ -12,7 +12,10 @@ public class App {
         System.out.println("Give the second number:");
         int second = Integer.valueOf(scanner.nextLine());
         
-        int sum = first + second;
-        System.out.println(first + " + " + second + " = " + sum);
+        System.out.println("Give the third number:");
+        int third = Integer.valueOf(scanner.nextLine());
+
+        double sum = (first + second + third) / 3.0;
+        System.out.println("The average is " + sum);
     }
 }
