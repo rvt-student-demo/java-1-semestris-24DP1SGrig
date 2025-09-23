@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) {
-        detalas(args);
+        delikatese();
+        // detalas(args);
         // giftTax(args);
         // gradesAndPoints(args);
         // oddOrEven(args);
@@ -107,5 +108,28 @@ public class App {
             System.out.println("Parbaudi pasutijumu: par maz paplaksne");
         }
         System.out.println("Kopeja cena: " + (skruves * SKRUVES_CENA + uzgrieznis * UZGRIEZNIS_CENA + paplasnes * PAPLASNE_CENA));
+    }
+    public static void delikatese() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ievadi preci: ");
+        String prece = String.valueOf(scanner.nextLine());
+        System.out.println("Ievadi cenu: ");
+        Double cena = Double.valueOf(scanner.nextLine());
+        System.out.println("Ekspress piegade (0==ne, 1==ja)");
+        int piegade = Integer.valueOf(scanner.nextLine());
+
+        if (piegade == 1) {
+            piegade += 2;
+        }
+        if (cena < 10) {
+            piegade += 2;
+        }
+        piegade *= 1.0;
+        Double kopa = cena + piegade;
+        System.out.println("\nRekins:");
+        System.out.println("  " + prece + "\t" + cena);
+        System.out.println("  piegade\t" + (piegade * 1.0));
+        System.out.println("  kopa\t\t" + kopa);
     }
 }
