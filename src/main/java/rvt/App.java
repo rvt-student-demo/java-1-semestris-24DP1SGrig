@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) {
-        delikatese();
+        AreWeThereYet();
+        // delikatese();
         // detalas(args);
         // giftTax(args);
         // gradesAndPoints(args);
@@ -131,5 +132,32 @@ public class App {
         System.out.println("  " + prece + "\t" + cena);
         System.out.println("  piegade\t" + (piegade * 1.0));
         System.out.println("  kopa\t\t" + kopa);
+    }
+    public static void AreWeThereYet() {
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            System.out.println("Give a number:");
+            int input = Integer.valueOf(scanner.nextLine());
+            if (input == 4) {
+                break;
+            }
+        }
+    }
+    public static void Numbersum() {
+        Scanner scanner = new Scanner(System.in);
+        int loops = 0;
+        int sum = 0;
+        while (true) {
+            System.out.println("Gibe a number: ");
+            int input = Integer.valueOf(scanner.nextLine());
+            if (input == 0) {
+                break;
+            } else {
+                loops += 1;
+                sum += input;
+            }
+        }
+        System.out.println("Numer of numbers: " + loops);
+        System.out.println("Sum of the numbers " + sum);
     }
 }
