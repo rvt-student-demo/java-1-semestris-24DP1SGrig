@@ -5,7 +5,7 @@ public class App {
     public static void main(String[] args) {
         ex1();
         ex2();
-        ex3();
+        // ex3();
     }
     public static void ex1() {
         int[] val = {0, 1, 2, 3}; 
