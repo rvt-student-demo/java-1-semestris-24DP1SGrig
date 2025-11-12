@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         Scanner scanner = new Scanner(System.in);
         Integer num;
 
@@ -29,6 +30,17 @@ public class App {
                 break;
             }
 
+=======
+        ex1();
+        ex2();
+        // ex3();
+    }
+    public static void ex1() {
+        int[] val = {0, 1, 2, 3}; 
+        int sum = 0;
+        for (int i = 0; i < val.length; i++) {
+            sum += val[i];
+>>>>>>> 38b183b77530fe76d08465b0b4d39688144d4a7e
         }
     }
 }
